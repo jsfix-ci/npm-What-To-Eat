@@ -1,6 +1,6 @@
 {
-  "name": "nodepackagetemplate-demo",
-  "version": "1.0.0",
+  "name": "@sogrey/what-to-eat-demo",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "Sogrey",
   "license": "MIT",
   "dependencies": {
-    "@sogrey/node-package-template": "^1.0.3"
+    "@sogrey/what-to-eat": "^0.0.1"
   }
 }

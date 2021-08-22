@@ -1,11 +1,6 @@
-let readAndWriteFile = require('@sogrey/node-package-template')
+let api = require('@sogrey/what-to-eat')
 
-var path = 'test-README.txt';
-var data = '测试写入文件数据：说明文档';
-readAndWriteFile.writeFile(path, data).then(function (flag) {
-    console.log('写入成功？', flag);
+var what2eat = new api.WhatToEat();
 
-    readAndWriteFile.readFile(path).then(function (data) {
-        console.log('写入的内容是：', data);
-    });
-});
+var cuisine = what2eat.whatToEat();
+console.log('本次吃点啥：', cuisine);
