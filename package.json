@@ -1,0 +1,14 @@
+{
+  "name": "nodepackagetemplate-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Sogrey",
+  "license": "MIT",
+  "dependencies": {
+    "@sogrey/node-package-template": "^1.0.3"
+  }
+}
