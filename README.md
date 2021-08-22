@@ -8,9 +8,7 @@ npm i @sogrey/what-to-eat
 ## Usage
 
 ``` js
-const api = require('../dist/index')
-
-console.log(api)
+let api = require('@sogrey/what-to-eat')
 
 var what2eat = new api.WhatToEat();
 
