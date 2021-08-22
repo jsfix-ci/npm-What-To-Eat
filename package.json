@@ -1,34 +1,37 @@
 {
-  "name": "@sogrey/node-package-template",
-  "version": "1.0.6",
-  "description": "npm 包模板",
-  "main": "index.js",
+  "name": "@sogrey/what-to-eat",
+  "version": "0.0.1",
+  "description": "吃点啥",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
-    "mocha:tests:readAndWriteFile": "mocha tests/readAndWriteFile.js",
-    "mocha:tests": "mocha --watch tests",
-    "mocha:reporter": "mocha --reporter mochawesome tests",
-    "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/",
+    "build": "npx tsc -p .",
+    "mocha:tests": "mocha --watch tests/mocha",
+    "mocha:reporter": "mocha --reporter mochawesome tests/mocha",
+    "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/mocha/",
     "npm:publish": "npm publish --access public",
     "npm:link": "npm link",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "hello": "./bin/hello.js"
+    "WhatToEat": "./bin/whatToEat.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sogrey/NodePackageTemplate.git"
+    "url": "git+https://github.com/Sogrey/npm-What-To-Eat.git"
   },
   "keywords": [
     "npm",
-    "Node Module Template Package"
+    "Node Module Package",
+    "whattoeat",
+    "what-to-eat"
   ],
   "author": "Sogrey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sogrey/NodePackageTemplate/issues"
+    "url": "https://github.com/Sogrey/npm-What-To-Eat/issues"
   },
-  "homepage": "https://github.com/Sogrey/NodePackageTemplate#readme",
+  "homepage": "https://github.com/Sogrey/npm-What-To-Eat#readme",
   "dependencies": {
     "commander": "^8.1.0",
     "es6-promise": "^4.2.8",
@@ -37,7 +40,9 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
+    "istanbul": "^0.4.5",
     "mocha": "^9.1.0",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.2.2",
+    "typescript": "^4.3.5"
   }
 }
