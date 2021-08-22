@@ -1,0 +1,43 @@
+{
+  "name": "@sogrey/node-package-template",
+  "version": "1.0.6",
+  "description": "npm 包模板",
+  "main": "index.js",
+  "scripts": {
+    "mocha:tests:readAndWriteFile": "mocha tests/readAndWriteFile.js",
+    "mocha:tests": "mocha --watch tests",
+    "mocha:reporter": "mocha --reporter mochawesome tests",
+    "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/",
+    "npm:publish": "npm publish --access public",
+    "npm:link": "npm link",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hello": "./bin/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sogrey/NodePackageTemplate.git"
+  },
+  "keywords": [
+    "npm",
+    "Node Module Template Package"
+  ],
+  "author": "Sogrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sogrey/NodePackageTemplate/issues"
+  },
+  "homepage": "https://github.com/Sogrey/NodePackageTemplate#readme",
+  "dependencies": {
+    "commander": "^8.1.0",
+    "es6-promise": "^4.2.8",
+    "shelljs": "^0.8.4",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0",
+    "mochawesome": "^6.2.2"
+  }
+}
