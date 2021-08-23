@@ -9,6 +9,6 @@
   "author": "Sogrey",
   "license": "MIT",
   "dependencies": {
-    "@sogrey/what-to-eat": "^0.0.1"
+    "@sogrey/what-to-eat": "^0.0.3"
   }
 }
