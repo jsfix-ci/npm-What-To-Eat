@@ -1,6 +1,6 @@
 {
   "name": "@sogrey/what-to-eat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "吃点啥",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -11,7 +11,7 @@
     "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/mocha/",
     "npm:publish": "npm publish --access public",
     "npm:link": "npm link",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./tests/test.js"
   },
   "bin": {
     "WhatToEat": "./bin/whatToEat.js"
