@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Sogrey/npm-What-To-Eat#readme",
   "dependencies": {
-    "commander": "^8.1.0",
+    "commander": "^9.4.0",
     "es6-promise": "^4.2.8",
     "shelljs": "^0.8.4",
     "yargs": "^16.2.0"
